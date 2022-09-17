@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            height: 1000vh;
+        }
+        #block
+        {
+            height: 50px;
+            background-color: Red;
+            color: #fff;
+        }
+        #inline
+        {
+            width: 300px;
+            height: 50px;
+            background-color: blue;
+            color: #fff;
+        }
+        #relative
+        {
+            position: relative;
+            width: 400px;
+            height: 150px;
+            top: 0;
+            left: 300px;
+            background-color: blueviolet;
+        }
+        #absolute
+        {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 400px;
+            height: 150px;
+            background-color: rgb(143, 146, 146);
+            color: red;
+
+        }
+        #fixed
+        {
+            position: fixed;
+            width: 400px;
+            height: 150px;
+            top:30%;
+            left: 50%;
+            background-color: chartreuse;
+        }
+        #sticky
+        {
+            position: sticky;
+            width: 400px;
+            height: 150px;
+            background-color: crimson;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>We learnt about CSS positioning and display values for HTML elements</h2>
+
+    <div id="block">
+        <h3>This is a block Element;</h3>
+    </div>
+
+    <div id="inline"> <h3>This is an inline Element</h3></div>
+    
+    <div id="relative">
+        <h3>This element's positioning is relative</h3>
+    </div>
+
+    <div id="absolute">
+        <h3>This element's positioning is absolute</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel eligendi dolorem commodi est sit ipsum corporis qui explicabo, accusantium, dolore repellat omnis impedit quo soluta delectus ducimus dignissimos. Facilis!</p>
+    </div>
+
+    <div id="fixed">
+        <h3>This element's positioning is fixed</h3>
+    </div>
+
+    <div id="sticky">
+        <h3>This element's positioning is sticky</h3>
+    </div>
+</body>
+</html>

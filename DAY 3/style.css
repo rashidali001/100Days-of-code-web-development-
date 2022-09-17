@@ -1,0 +1,149 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first_part
+{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background-color: #20063B;
+    color: #fff;
+}
+#home_screen
+{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2CDA9D;
+    color: black;
+    
+}
+#home_screen h1
+{
+    margin-bottom: 50px;
+    font-size: 50px;
+    
+}
+#home_screen p
+{
+    font-size: 20px;
+}
+#navigation
+{
+    display: flex;
+    background-color: black;
+    justify-content: flex-start;
+}
+#navigation > a
+{
+    text-decoration: none;
+    padding: 17px;
+    text-align: center;
+    color: #fff;
+    background-color: inherit;
+    
+    transition: 0.5s;
+}
+#navigation a:hover
+{
+    background-color: red;
+    border: none;
+}
+#main
+{
+    display: flex;
+}
+.common
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#section_one
+{
+    width: 25%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+}
+#section_two
+{
+    width: 75%;
+}
+.personal
+{
+    width: 100%;
+    padding: 30px 15px;
+}
+.personal :not(:last-child)
+{
+    margin-bottom: 30px;
+}
+#image_personal
+{
+    height: 250px;
+    background-color: #aaa;
+    padding: 2%;
+}
+#extra_info
+{
+    padding: 30px 15px;
+}
+#extra_image
+{
+    padding: 30px 15px;
+}
+#extra_image .extra_image_1
+{
+    height: 50px;
+    padding: 2%;
+    background-color: #aaa;
+}
+#extra_image .extra_image_1:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.image_section_two
+{
+    height: 400px;
+    padding: 3%;
+    background-color: #aaa;
+}
+#footer
+{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+}
+@media screen and (max-width: 800px)
+{
+      #main
+      {
+        display: block;
+      }
+     #section_one{
+        width: 100%;
+      }
+      #section_two{
+        width: 100%;
+      }
+}
+@media screen and (max-width: 600px)
+{
+    #navigation{
+        display: block;
+    }
+    #navigation a{
+        display: block;
+    }
+
+}

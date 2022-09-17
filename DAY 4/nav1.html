@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .dropdown
+        {
+            position: relative;
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            margin: 20px;
+        }
+        .dropdown span
+        {
+            padding: 20px;
+            display: inline-block;
+        }
+        .dropdown-content
+        {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            background-color: #f1f1f1;
+            box-shadow: black;
+        }
+        .dropdown-content a
+        {
+            text-decoration: none;
+            padding: 7px 15px;
+            color: #000;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <span>Span over me</span>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    
+</body>
+</html>
