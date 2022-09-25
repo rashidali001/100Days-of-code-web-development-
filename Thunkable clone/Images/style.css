@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/****Navigation***/
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+  background-color: #E1E5EE;
+  z-index: 10000;
+}
+nav div {
+  /*padding: 1%;
+  background-color: red;*/
+  max-width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+nav #logo_img {
+  width: 60%;
+  height: auto;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 13px 10px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 5px;
+  font-size: 14.5px;
+  border-radius: 6px;
+}
+nav ul li a:hover {
+  border: 1px solid #4A5AE8;
+}
+nav ul li a#checked {
+  background-color: #6F7BEC !important;
+  color: #fff !important;
+}
+
+/***Navigation***/
+/****Section one***/
+section.one {
+  margin-top: 100px;
+}
+
+section.common {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+section.common div.grid_item {
+  height: 400px;
+}
+section.common div.one-one {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  padding-left: 7%;
+  padding-right: 3%;
+}
+section.common div.one-one h1 {
+  font-size: 58px;
+  margin-bottom: 40px;
+}
+section.common div.one-one p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+section.common div.one-one a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 17px;
+  background-color: #6F7BEC;
+  color: #fff;
+  border-radius: 6px;
+}
+section.common div.two-two {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+section.common div.two-two div.background {
+  background-color: #6F7BEC;
+  width: 100%;
+  height: 300px;
+}
+section.common img {
+  position: absolute;
+  height: auto;
+  top: -100px;
+  left: -100px;
+  width: 170%;
+  background-color: #6F7BEC;
+}
+
+/***** section 2****/
+section.two {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+}
+section.two h1 {
+  text-align: center;
+  font-size: 50px;
+}
+section.two div.flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+}
+section.two div.flex div.flex2_item {
+  padding: 50px 0;
+  width: 40%;
+}
+section.two div.flex .flex2_item:nth-child(2) {
+  padding-right: 150px;
+}
+section.two div.flex .flex2_item:nth-child(1) {
+  background-color: #6F7BEC;
+  position: relative;
+}
+section.two div.flex .flex2_item:nth-child(1) img {
+  position: absolute;
+  top: -25px;
+  right: -130px;
+}
+section.two img {
+  position: absolute;
+  bottom: -35%;
+  right: 0;
+}
+
+/***** section three start *****/
+section.three {
+  padding: 5%;
+  background-color: #EBEBEA;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.three h1 {
+  font-size: 35px;
+  padding-left: 5%;
+}
+section.three div.flex3 {
+  width: 90%;
+  margin: auto;
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-around;
+}
+section.three div.flex3 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  width: 20%;
+  max-height: 250px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-right: 5px;
+}
+section.three div.flex3 div img.flex3_img {
+  width: 100%;
+  height: 40%;
+}
+section.three div.flex3 div p {
+  text-align: center;
+}
+
+/***section 4***/
+section.four {
+  padding: 20% 0 10% 0;
+  overflow: hidden;
+  position: relative;
+}
+section.four div.flex4 {
+  display: flex;
+}
+section.four div.flex4 div.flex4_item {
+  width: 50%;
+}
+section.four div.flex4 div.flex4_item:nth-child(1) {
+  padding-left: 10%;
+  padding-right: 5%;
+}
+section.four div.flex4 div.flex4_item:nth-child(1) h1 {
+  font-size: 35px;
+}
+section.four div.flex4 div.flex4_item:nth-child(1) p {
+  color: rgba(0, 0, 0, 0.7);
+}
+section.four div.flex4 div.flex4_item:nth-child(1) a {
+  margin-top: 50px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 17px;
+  background-color: #6F7BEC;
+  color: #fff;
+  border-radius: 6px;
+}
+section.four div.flex4 div.flex4_item:nth-child(2) {
+  background-color: #1B998B;
+  position: relative;
+}
+section.four div.flex4 div.flex4_item:nth-child(2) img {
+  position: absolute;
+  top: -200px;
+  left: -200px;
+}
+section.four img {
+  position: absolute;
+  top: -25%;
+}
+
+/***Section 5***/
+section.five {
+  padding: 10% 0 10% 0;
+  overflow: hidden;
+  position: relative;
+}
+section.five div.flex5 {
+  display: flex;
+}
+section.five div.flex5 div.pic {
+  background-color: #FF9D5C;
+  position: relative;
+}
+section.five div.flex5 div.pic img.pic_img {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+}
+section.five div.flex5 div.six {
+  background-color: #4A5AE8 !important;
+  height: 150px;
+  position: relative;
+  border: 2px solid black;
+}
+section.five div.flex5 div.para {
+  padding-left: 10%;
+  padding-right: 5%;
+}
+section.five div.flex5 div.para h1 {
+  font-size: 35px;
+}
+section.five div.flex5 div.para p {
+  color: rgba(0, 0, 0, 0.7);
+}
+section.five div.flex5 div.para a {
+  margin-top: 70px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 17px;
+  background-color: #6F7BEC;
+  color: #fff;
+  border-radius: 6px;
+}
+section.five div.flex5 div.flex5_item {
+  width: 50%;
+}
+
+#sectionsix {
+  position: absolute;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */
